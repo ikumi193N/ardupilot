@@ -1154,6 +1154,10 @@ private:
     void dataflash_periodic(void);
     void accel_cal_update(void);
 
+    // reverse mode
+    bool reverse_init(bool ignore_checks);
+    void reverse_run();
+
 public:
     void mavlink_delay_cb();
     void failsafe_check();
